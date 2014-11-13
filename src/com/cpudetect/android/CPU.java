@@ -5,5 +5,5 @@ public class CPU {
 		System.loadLibrary("cpu-detect");
 	}
 	
-	public static native void getCpuInfo();
+	public static native String getArchString();
 }

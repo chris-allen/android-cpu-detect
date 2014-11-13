@@ -13,7 +13,7 @@
 #define VVLOG_INFO 3
 #define VVLOG_WARNING 4
 #define VVLOG_ERROR 5
-#define VVLOG_LEVEL VVLOG_INFO
+#define VVLOG_LEVEL VVLOG_ERROR
 
 #define LOG_V(...) if(VVLOG_LEVEL <= VVLOG_VERBOSE) __android_log_print(ANDROID_LOG_VERBOSE, __FILE__ , __VA_ARGS__)
 #define LOG_D(...) if(VVLOG_LEVEL <= VVLOG_DEBUG)                                                     \

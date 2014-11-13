@@ -54,6 +54,25 @@
             unless="sdk.dir"
     />
 
+    <target name="jar">
+        <jar destfile="bin/cpu-detect.jar" >
+            <fileset dir="bin/classes" >
+                <exclude name="**/TestActivity.class" />
+                <exclude name="**/BuildConfig.class" />
+                <exclude name="**/R.class" />
+                <exclude name="**/R$attr.class" />
+                <exclude name="**/R$color.class" />
+                <exclude name="**/R$drawable.class" />
+                <exclude name="**/R$id.class" />
+                <exclude name="**/R$layout.class" />
+                <exclude name="**/R$raw.class" />
+                <exclude name="**/R$string.class" />
+                <exclude name="**/R$style.class" />
+                <exclude name="**/R$styleable.class" />
+            </fileset>
+        </jar>
+    </target>
+
     <!--
         Import per project custom build rules if present at the root of the project.
         This is the place to put custom intermediary targets such as:
